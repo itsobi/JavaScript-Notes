@@ -611,6 +611,132 @@
 // })
 
 
+// WINDOW OBJECT PROPERTIES
+
+// console.log(window);
+
+// let val;
+// val = window.innerHeight;
+// val = window.innerWidth;
+
+// val = window.location;
+// val = window.location.pathname;
+// val = window.location.href;
+
+// val = window.window.history;
+// val = window.window.history.forward();
+// val = window.window.history.back();
+
+// val = window.navigator;
+
+// console.log(val);
 
 
 
+//ALERT CONFIRM AND PROMPT POPUP
+
+// console.log(window);
+
+// Alert
+// alert("Hello World!");
+
+// Confirm Popup
+// confirm("Press OK");
+
+// if (confirm("Press ok")) {
+//     console.log("User pressed OK");
+// } else {
+//     console.log("User pressed Cancel");
+// }
+
+// Prompt
+// let person = prompt("What is your name?");
+
+// if (person === null || person === "") {
+//     console.log("No value was entered");
+// } else {
+//     console.log("Hello " + person);
+// }
+
+
+// setTimeout
+
+// function greetUser() {
+//     alert("Hello User!");
+// }
+// const greet = setTimeout(greetUser, 3000) // 1000ms = 1s
+
+// clearTimeout(greet); // To stop setTimeout
+
+//setInterval
+// function greetUser() {
+//     alert("Hello User!!!!!");
+// }
+// const greet = setInterval(greetUser, 3000); //1000ms = 3s
+
+// clearInterval(greet);
+
+
+
+
+// HOW TO BUILD DIGITAL CLOCK
+
+// const time = document.querySelector(".time")
+
+// function displayTime() {
+//     const date = new Date();
+//     time.innerHTML = date.toLocaleTimeString();
+// }
+
+// setInterval(displayTime, 1000);
+
+
+
+// CALLBACK FUNCTION
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// const calc = add(2, 2);
+
+// console.log(calc);
+
+// Callback
+// function add(funcTwo, b) {
+//     return funcTwo() + b;
+// }
+
+// function funcTwo() {
+//     return 2;
+// }
+
+// const calc = add(funcTwo, 5);
+// console.log(calc);
+
+
+// ARRAY METHODS - forEach, Map & Filter
+// const days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+
+// forEach
+// days.forEach(function(day, index) {
+//     console.log(`Day ${index + 1} = ${day}`);
+// })
+
+// Map
+// const numbers = [1, 2, 3, 4, 5];
+
+// const double = numbers.map(function(number) {
+//     return number * 2;
+// })
+
+// console.log(double);
+
+// Filter
+// const ages = [16, 18, 14, 34, 33, 12];
+
+// const legalAge = ages.filter(function(age) {
+//     return age >= 18;
+// })
+
+// console.log(legalAge);
