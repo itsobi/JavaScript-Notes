@@ -740,3 +740,90 @@
 // })
 
 // console.log(legalAge);
+
+
+
+//FUNCTION EXPRESSION
+// const greet = function() {
+//     console.log("Hello");
+// }
+
+//ARROW FUNCTION
+// const greet = () => {
+//     console.log("Hello!!");
+// }
+
+//One Line Arrow Function
+// const greet = () => console.log("Hello!!!!!"); // *One Line*
+// greet();
+
+// const add 5, 2(number) => {
+//     return number * 2;
+// }
+
+// const double = (number) => number * 2; // *One Line*
+
+// const add = (a, b) => a + b
+
+// console.log(add(5, 2));
+
+// const days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+
+// Using Unnamed Function
+// days.forEach(function(day) {
+//     console.log(day);
+// })
+
+// Using Arrow Function
+// days.forEach((day) => {
+//     console.log(day);
+// })
+
+
+
+//LOCAL STORAGE
+// console.log(window);
+
+// console.log(Object.getOwnPropertyNames(window));
+
+// LOCAL STORAGE METHODS
+// setItem(): Add key and value to localStorage
+// getItem(): This is how you get items from localStorage
+// removeItem(): Remove an item by key from localStorage
+// clear(): Clear all localStorage
+// key(): Passed a number to retrieve the key of a localStorage
+
+// Adding Key & Value to localStorage
+// window.localStorage.setItem("key", "value");
+
+// window.localStorage.setItem("firstName", "Obi");
+// localStorage.setItem("lastName", "Obialo");
+
+// *If you want to store an Array of Object in localStorage, YOU MUST CONVERT TO STRING USING json.stringify*()
+
+// Object Example
+// const person = {
+//     fulllName: "Obialo, Obi",
+//     location: "Texas" 
+// }
+
+// localStorage.setItem("user", JSON.stringify(person));
+
+// Array Example
+// const fruits = ["Apple", "Mango", "Pear"];
+
+// localStorage.setItem("fruits", JSON.stringify(fruits));
+
+// GET ITEM FROM LOCAL STORAGE
+// console.log(localStorage.getItem("firstName"));
+
+// REMOVE ITEM FROM LOCAL STORAGE
+// localStorage.removeItem("fruits");
+
+// CLEAR LOCAL STORAGE
+// localStorage.clear();
+
+// localStorage.setItem("name", "Obi");
+// localStorage.setItem("age", "23");
+
+// console.log(localStorage.key(0));
