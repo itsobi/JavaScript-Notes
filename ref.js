@@ -827,3 +827,200 @@
 // localStorage.setItem("age", "23");
 
 // console.log(localStorage.key(0));
+
+
+// USE STRICT MODE
+// "use strict";
+
+// x = 5; // This is bad practice
+
+// console.log(x);
+
+
+// function add(a, b) {
+//     return a + a;
+// }
+
+// console.log(add(2, 2));
+
+
+// OBJECT ORIENTED PROGRAMMING
+// Property = variable inside an object
+// Method = function inside an object
+// const calculate = {
+//     x: 10, // Properties (variables inside object)
+//     y: 5, 
+
+//     add: function() { // Method (function inside object)
+//         return this.x + this.y;
+//     },
+// }
+// let val;
+
+// val = calculate.add()
+// console.log(val);
+
+
+
+// OBJECT LITERALS & THIS KEYWORD
+
+// const person = {
+//     firstName: "Obi",
+//     lastName: "Obialo",
+//     age: 23,
+
+//     greet: function() {
+//         // console.log("Hello");
+//         return `Hello everyone, my name is ${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// console.log(person);
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.greet());
+
+
+// OBJECT CONSTRUCTORS *Capitalize first letter of constructor*
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+
+//     this.greet = function() {
+//         return `Hello, my name is ${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// const obi = new Person("Obi", "Obialo", 23);
+// const mary = new Person("Mary", "Doe", 24);
+
+// console.log(obi.greet());
+// console.log(mary.greet());
+
+
+// THIS KEYWORD IN FUNCTIONS
+
+// const box1 = document.querySelector(".box1")
+// const box2 = document.querySelector(".box2")
+
+// function func1() {
+//     console.log("func1", this);
+// }
+
+// const func2 = () => {
+//     console.log("func2", this);
+// }
+
+// box1.addEventListener("click", func1); // logs the element
+// box2.addEventListener("click", func2); // logs the window
+
+
+//PROTOTYPE
+
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.currentYear = new Date().getFullYear();
+// }
+
+// // GREET PROTOTYPE
+// Person.prototype.greet = function() {
+//     return `Hello, my name is ${this.firstName} ${this.lastName}`
+// }
+
+// // BIRTH YEAR PROTOTYPE
+// Person.prototype.birthYear = function() {
+//     return this.currentYear - this.age;
+// }
+
+// const obi = new Person("Obi", "Obialo", 23);
+// const mary = new Person("Mary", "Doe", 24);
+
+// console.log(obi.birthYear());
+// console.log(mary.birthYear());
+
+
+// // Object Constructors
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.currentYear = new Date().getFullYear();
+// }
+
+// // GREET PROTOTYPE
+// Person.prototype.greet = function() {
+//     return `Hello, my name is ${this.firstName} ${this.lastName}`
+// }
+
+// // CREATE ANOTHER OBJECT
+// function User(firstName, lastName, userName, password) {
+//     Person.call(this, firstName, lastName);
+//     this.userName = userName;
+//     this.password = password;
+// }
+
+// // PROTOTYPE INHERITANCE
+
+// User.prototype = Object.create(Person.prototype);
+
+// const user1 = new User("John", "Doe", "Mr.John", "John123")
+
+// console.log(user1);
+// console.log(user1.greet());
+
+
+
+// ES6 CLASSES
+// class Person {
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         return `Hello, my name is ${this.firstName} ${this.lastName}`
+//     }
+//     // STATIC METHOD
+//     static hello() {
+//         return "Hello";
+//     }
+// }
+
+// const obi = new Person("Obi", "Obialo", 23);
+
+// // console.log(obi.greet());
+
+// // Calling Static Method
+// console.log(Person.hello());
+
+
+// ES6 CLASSES
+// class Person {
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         return `Hello, my name is ${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// // CREATE ANOTHER CLASS // Subclass 
+// class User extends Person {
+//     constructor(firstName, lastName, userName, password) {
+//         super(firstName, lastName,)
+//         this.userName = userName;
+//         this.password = password;
+//     }
+// }
+
+// const user1 = new User("John", "Doe", "MrJohn", "John123");
+
+// console.log(user1.greet());
+
